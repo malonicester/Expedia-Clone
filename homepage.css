@@ -1,27 +1,424 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Oswald:wght@300;500;600&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  nav > a > img {
-    width: 35%;
-  }
-  .nav-elem {
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .nav-elem > li{
-    list-style: none;
-  }
-  .nav-elem > li > a{
-    text-decoration: none;
-    color: black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  border-bottom: 1px solid rgb(198 192 192);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav > div > a {
+  width: 100px;
+}
+nav > div > a > img {
+  width: 78%;
+}
+nav > div > h2 {
+  color: rgb(114, 113, 113);
+  margin-right: 15px;
+  font-family: "Oswald", sans-serif;
+}
+.nav-elem {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-elem > li {
+  list-style: none;
+}
+.nav-elem > li > a {
+  text-decoration: none;
+  color: black;
+}
+.nav-elem > li > a:hover {
+  color: #3662d8;
+}
+.fa-solid {
+  margin-right: 10px;
+}
+#logo {
+  margin-left: 20px;
+}
+.trip-details {
+  width: 90%;
+  margin: 50px auto;
+  border: 1px solid #727070;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(85 83 83);
+}
+.options {
+  display: flex;
+  margin-left: 13px;
+  margin-right: 13px;
+  padding: 0px 40px;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid rgb(161 155 155);
+  margin-bottom: 2px;
+}
+.options > * {
+  margin-top: 30px;
+}
+.options > h4 > a {
+  text-decoration: none;
+  color: rgb(85 83 83);
+  font-weight: 500;
+}
+.options>h4:first-child>a{
+  color: rgb(31, 107, 206);
+  border-bottom: 2px solid rgb(13, 99, 197);
+}
+.options > h4 > a:focus {
+  color: rgb(31, 107, 206);
+  border-bottom: 2px solid rgb(13, 99, 197);
+}
+.options > h4 > a:hover {
+  color: rgb(99, 97, 97);
+  border-bottom: 2px solid rgb(161 155 155);
+}
+.trip-input {
+  margin: 30px 17px;
+  position: relative;
+}
+.trip-input > input {
+  margin-right: 5px;
+  padding: 20px;
+}
+#location-dot {
+  position: absolute;
+  left: 5px;
+  bottom: 14px;
+}
+#search {
+  margin: 15px;
+  margin-left: 500px;
+  cursor: pointer;
+  padding: 10px 50px;
+  border: none;
+  background-color: #3260de;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#person {
+  position: absolute;
+  right: 320px;
+  bottom: 15px;
+}
+#search:hover {
+  background-color: #2c55c5;
+}
+#going {
+  width: 408px;
+  height: 40px;
+  padding: 20px 24px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+.trip-input > input:focus {
+  outline: none;
+}
+#start,
+#end {
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 20px;
+}
+#traveller {
+  width: 330px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding: 20px 25px;
+  font-size: 15px;
+}
+.checkbox {
+  margin-left: 18px;
+}
+.check {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+}
+.rewards {
+  width: 90%;
+  margin: 50px auto;
+  height: 400px;
+  color: white;
+  background: linear-gradient(rgb(25 24 25 / 50%), rgb(9 9 9 / 50%)),
+    url("./background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px;
+  margin-top: 40px;
+}
+.text > div > * {
+  margin: 10px 0px;
+  line-height: 1.4;
+}
+
+.text > div {
+  width: 30%;
+}
+.member-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3260de;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+.member-btn:hover {
+  background-color: #2c55c5;
+}
+.qrcode {
+  display: flex;
+  width: 90%;
+  gap: 10px;
+  margin: 50px auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgb(161 155 155);
+  color: rgb(85 83 83);
+}
+.qrcode > div:first-child {
+  width: 30%;
+  height: 100%;
+}
+.qrcode > div:first-child > img {
+  width: 100%;
+}
+.qrcode > div:nth-of-type(2) {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.top {
+  height: 50%;
+  margin: 10px 0px 0px 0px;
+}
+.top > * {
+  line-height: 1.2;
+}
+.bottom {
+  margin-top: 10px;
+}
+.qrcode > div:last-child {
+  width: 15%;
+  text-align: center;
+}
+.qrcode > div:last-child > img {
+  width: 100%;
+}
+#qr {
+  padding: 56px 20px 0px 20px;
+}
+.bottom > select {
+  height: 40px;
+  width: 138px;
+  border-radius: 7px;
+  outline: 0;
+}
+.bottom > input {
+  height: 40px;
+  width: 200px;
+  border-radius: 7px;
+  outline: 0;
+  border: 1px solid black;
+  padding: 20px;
+}
+#getApp {
+  padding: 10px 50px;
+  border: none;
+  font-size: 17px;
+  background: #2c55c5;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.bottom > * {
+  margin-right: 10px;
+  margin-bottom: 6px;
+}
+.top > h1 {
+  margin-bottom: 8px;
+}
+.top > p {
+  font-size: 14px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5rem);
+  background-color: white;
+  padding: 0.75rem;
+  pointer-events: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(129, 129, 139, 0.2) 0px 7px 29px 0px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.dropdown.active .link,
+.link:hover {
+  color: #3662d8;
+}
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.information-grid {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  gap: 2rem;
+}
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.dropdown-links > a {
+  color: rgb(81, 78, 78);
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding: 10px 70px 10px 20px;
+}
+.dropdown-links > a:hover {
+  background-color: rgb(184, 212, 249);
+  border-radius: 10px;
+}
+.link {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.suggestion {
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+}
+.suggestion > * {
+  color: rgb(54, 53, 53);
+  margin: 10px;
+}
+.suggested-elem {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+.suggested-elem > div {
+  padding: 10px 10px 40px 5px;
+  box-shadow: rgb(192 187 219 / 15%) 0px 48px 100px 0px;
+  border-radius: 10px;
+  border: 2px solid white;
+
+}
+.suggested-elem > div {
+  width: 20%;
+}
+.suggested-elem > div:hover,
+.footer-image:hover {
+  border: 2px solid rgb(36, 107, 240);
+}
+.suggested-elem > div > img {
+  margin-bottom: 5px;
+  width: 100%;
+}
+.footer-image {
+  width: 90%;
+  height: 230px;
+  margin: 50px auto;
+  border: 2px solid white;
+  background: linear-gradient(rgb(72 69 72 / 50%), rgb(109 103 103 / 50%)),
+    url("https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg");
+  object-fit: contain;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: end;
+}
+.footer-image > * {
+  padding: 10px;
+}
+.desc {
+  width: 26%;
+  margin: 20px auto;
+  text-align: center;
+}
+.desc > a {
+  color: rgb(96, 96, 178);
+  text-decoration: none;
+  font-size: 12px;
+}
+.desc > p {
+  font-size: 15px;
+}
+.desc > a:hover {
+  border-bottom: 2px solid rgb(96, 96, 178);
+}
+footer {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 20px;
+  border-bottom: 1px solid #727070;
+}
+footer h2 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(48 29 143);
+}
+footer > div > a {
+  display: block;
+  margin: 10px 0px;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(96, 96, 178);
+}
+.end {
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+}
+.end > small {
+  opacity: 60%;
+}
+.end > img {
+  display: block;
+  margin: 0 450px;
+}
