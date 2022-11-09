@@ -17,9 +17,14 @@
   </head>
   <body>
     <nav>
-      <a href="../index.html"><img src="./Ashish 2 (4).png" alt="" /></a>
+      <a id="logo" href="./homepage.html"
+        ><img src="./Ashish 2 (4).png" alt=""
+      /></a>
+      <!-- <h1></h1> -->
       <ul class="nav-elem">
-        <li><a href="">English</a></li>
+        <li>
+          <a href=""><i class="fa-solid fa-globe"></i>English</a>
+        </li>
         <li><a href="">Support</a></li>
         <li><a href="">Trips</a></li>
         <li>
@@ -28,5 +33,79 @@
         <li><a href="">Sign in</a></li>
       </ul>
     </nav>
+    <div class="trip-details">
+      <div class="options">
+        <h4><a href="#">Stays</a></h4>
+        <h4><a href="#">Flights</a></h4>
+        <h4><a href="#">Cars</a></h4>
+        <h4><a href="#">Packages</a></h4>
+        <h4><a href="#">Things to do</a></h4>
+      </div>
+      <div class="trip-input">
+        <i id="location-dot" class="fa-sharp fa-solid fa-location-dot"></i>
+        <input id="going" placeholder="Going to" type="text" />
+        <input id="start" type="date" />
+        <input id="end" type="date" />
+        <i id="person" class="fa-solid fa-person"></i>
+        <input id="traveller" placeholder="No of Travellers" type="number" />
+      </div>
+      <div class="checkbox">
+        <input class="check" type="checkbox" name="" id="" />
+        <label for="">Add a Flight </label>
+        <input class="check" type="checkbox" name="" id="" />
+        <label for="">Add a Car</label>
+      </div>
+      <button id="search">Search</button>
+    </div>
+    <div class="rewards">
+      <div class="text">
+        <div>
+          <h1>Save instantly with Expedia Rewards</h1>
+          <p>
+            You can enjoy access to perks like Member Prices, saving an average
+            of 15% on thousands of hotels. Terms may apply.
+          </p>
+        </div>
+        <div>
+          <button class="member-btn">See Member Prices</button>
+        </div>
+      </div>
+    </div>
+    <div class="qrcode">
+      <div>
+        <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="" />
+      </div>
+      <div>
+        <div class="top">
+          <h1>Our app takes you further</h1>
+          <p>
+            When you book on the app you can save even more up to 20% on select
+            hotels while earning double the points with every booking. With
+            these app deals you'll save even more on trips, and that means you
+            can take more trips, and manage it all on the go.
+          </p>
+        </div>
+        <div class="bottom">
+          <h3>Text yourself a download link for easy access</h3>
+          <select name="" id="phone">
+            <option value="india">India +91</option>
+          </select>
+          <input placeholder="Phone number" type="number" />
+          <button id="getApp">Get the app</button>
+          <small>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</small>
+        </div>
+      </div>
+      <div >
+        <img id="qr" src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_BNA_HP.png" alt="" />
+        <p>Scan the QR code</p>
+      </div>
+    </div>
+    <div class="suggestion">
+      <h1>Suggestion for you</h1>
+      <div>
+        <h4>Simillar New Delhi stays</h4>
+        <p>Travellers who viewed Vivanta New Delhi, Dwarka also viewed these stays.</p>
+      </div>
+    </div>
   </body>
 </html>
