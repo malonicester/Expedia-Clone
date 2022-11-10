@@ -7,6 +7,17 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+nav h2{
+  font-size: 25px;
+}
+nav h2>a{
+  text-decoration: none;
+  color: rgb(129, 123, 123);
+  font-family: "Oswald", sans-serif;
+}
+nav h2>a:hover{
+  color: rgb(16, 79, 174);
+}
 nav {
   display: flex;
   justify-content: space-between;

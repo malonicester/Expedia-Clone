@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Oswald:wght@300;500;600&display=swap");
 
+nav h2{
+  font-size: 25px;
+}
+nav h2>a{
+  text-decoration: none;
+  color: rgb(129, 123, 123);
+  font-family: "Oswald", sans-serif;
+}
 .service {
   background: linear-gradient(rgb(25 24 25 / 50%), rgb(9 9 9 / 50%)),
     url("https://images.unsplash.com/photo-1470645792662-dd18394f8c97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
