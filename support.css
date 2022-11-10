@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Oswald:wght@300;500;600&display=swap");
+
+.service {
+  background: linear-gradient(rgb(25 24 25 / 50%), rgb(9 9 9 / 50%)),
+    url("https://images.unsplash.com/photo-1470645792662-dd18394f8c97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  height: 100px;
+  padding: 20px 100px;
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 50px;
+}
+.service input {
+  padding: 10px 150px 10px 10px;
+}
+.support-body {
+  width: 85%;
+  margin: auto;
+  padding-top: 50px;
+}
+.support-body > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+#support-body > div > div {
+  padding: 10px 5px;
+}
+#support-body > div > div > * {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif !important;
+}
+#contact {
+  /* margin: 10px 0px; */
+  margin-left: 80%;
+  padding: 10px;
+  border: none;
+  background: rgb(206 214 206);
+  border-radius: 10px;
+}
+.topic-item {
+ padding: 20px;
+  border: 1px solid black;
+  box-shadow: rgb(219 219 225 / 20%) 0px 7px 29px 0px;
+}
+#support-body h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#support-body h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.topic-item > li {
+  list-style: none;
+}
+.topic-item > li > a {
+  color: rgb(85, 117, 206);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#support-body .accordion-button {
+  color: rgb(22 78 219);
+}
+.topic > div > h4 {
+  margin-bottom: 10px;
+}
+section {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.download {
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.footer {
+  padding: 50px;
+  width: 90%;
+  margin: 50px auto;
+  border: 2px solid rgb(18, 119, 208);
+}
+
+.messages {
+  display: flex;
+  width: 70%;
+  gap: 10px;
+} 
+#property{
+    margin-top: 10px;
+    margin-left: 40%;
+    padding: 10px;
+    border: 2px solid rgb(19, 84, 214);
+    background: none;
+    color: rgb(19, 84, 214);
+    border-radius: 7px;
+}
