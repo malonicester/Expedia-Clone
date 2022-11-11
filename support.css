@@ -40,10 +40,9 @@ nav h2>a{
   font-family: "Roboto", sans-serif !important;
 }
 #contact {
-  /* margin: 10px 0px; */
   margin-left: 80%;
   padding: 10px;
-  border: none;
+  border: 1px solid black;
   background: rgb(206 214 206);
   border-radius: 10px;
 }
