@@ -4,8 +4,8 @@ let form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let obj = {
-        name:form.email.value,
-        email:form.first_Name.value,
+        email:form.email.value,
+        firstName:form.first_Name.value,
         lastName:form.last_Name.value,
         password:form.password.value,
     }
