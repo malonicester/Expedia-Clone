@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Oswald:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid;
+  border-bottom: 1px solid rgb(198 192 192);
+}
+nav > a {
+  width: 60px;
+}
+#heading > a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: rgb(129, 123, 123);
+}
+#heading > a:hover {
+  color: rgb(19, 73, 130);
+}
+nav > a > img {
+  width: 100%;
+}
+#google {
+  width: 12%;
+}
+#google_signin {
+  padding: 6px 80px 6px 7px;
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  justify-content: start;
+  gap: 91px;
+  align-items: center;
+  background: rgb(26 88 228);
+  border: none;
+  border-radius: 10px;
+}
+#google_signin > img {
+  background-color: white;
+  padding: 4px;
+  border-radius: 7px;
+}
+#google_signin > a {
+  text-decoration: none;
+  color: white;
+}
+section {
+  width: 30%;
+  margin: 50px auto;
+}
+small {
+  display: inline-block;
+}
+section > * {
+  margin: 10px 0px;
+}
+form > * {
+  margin: 10px 0px;
+}
+#or {
+  margin-left: 48%;
+}
+section > form > input {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 7px;
+  outline: 0;
+  border: 1px solid black;
+}
+section small,
+section label,
+section p {
+  opacity: 70%;
+  font-size: 80%;
+}
+section > form > .check {
+  margin: 0;
+  width: 20px;
+}
+section > p > a {
+  text-decoration: none;
+}
+.submit,
+#log_in {
+  width: 100%;
+  padding: 10px 80px 10px 54px;
+  background: rgb(26 88 228);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}

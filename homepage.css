@@ -48,6 +48,7 @@ nav > div > h2 {
 .nav-elem {
   width: 40%;
   display: flex;
+  margin: 0;
   justify-content: space-evenly !important;
   align-items: center !important;
 }
