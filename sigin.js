@@ -5,7 +5,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     let obj = {
         email:form.email.value,
-        firstName:form.first_Name.value,
+        firstNamej:form.first_Name.value,
         lastName:form.last_Name.value,
         password:form.password.value,
     }
