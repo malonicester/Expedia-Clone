@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trips</title>
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./trips.css" />
+    <script src="./hotel.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a id="logo" href="./index.html"
+          ><img src="./Ashish 2 (4).png" alt=""
+        /></a>
+        <h2><a href="./index.html">TRAVEL SMART</a></h2>
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button>
+            More Travels<i class="fa-solid fa-angle-down"></i>
+          </button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <a href="#"><i class="fa-solid fa-hotel"></i>Stays</a>
+                <a href="#"
+                  ><i class="fa-solid fa-plane-departure"></i>Flights</a
+                >
+                <a href="#"><i class="fa-sharp fa-solid fa-car"></i>Cars</a>
+                <a href="#"><i class="fa-solid fa-briefcase"></i>Packages</a>
+                <a href="#"
+                  ><i class="fa-sharp fa-solid fa-gifts"></i>Holiday
+                  activities</a
+                >
+                <a href="#">Deals</a>
+                <a href="#">Group & Meetings</a>
+                <a href="#">Mobiles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-elem">
+        <li>
+          <a href="#"><i class="fa-solid fa-globe"></i>English</a>
+        </li>
+        <li><a href="./support.html">Support</a></li>
+        <li><a href="">Trips</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-bell"></i></a>
+        </li>
+        <li><a href="./siginin.html">Sign in</a></li>
+      </ul>
+    </nav>
+    <div id="input_group">
+        <input placeholder="Going To" type="text" name="" id="goingTO">
+        <input  type="date" name="" id="startDate">
+        <input type="date" name="" id="endDate">
+        <input placeholder="Travellers" type="text" name="" id="travelNo">
+        <button id="btn">Search</button>
+    </div>
+    <h1 id="delhi">Hotels Near Delhi</h1>
+    <div id="select">
+      <select name="" id="price">
+        <option value="">Sort By Price</option>
+        <option value="LTH">Low To High</option>
+        <option value="HTL">High To Low</option>
+      </select>
+      <select name="" id="ratings">
+        <option value="">Sort By Ratings</option>
+        <option value="LTH">Low To High</option>
+        <option value="HTL">High To Low</option>
+      </select>
+    </div>
+    <div class="container">
+      <div>
+        <img
+          src="https://images.trvl-media.com/hotels/5000000/4660000/4651800/4651727/c9be0802.jpg?impolicy=resizecrop&rw=455&ra=fit"
+          alt=""
+        />
+        <div class="title">
+          <div>
+            <h2>The Leela Palace New Delhi</h2>
+            <p>Chanakyapuri</p>
+          </div>
+          <div class="price-component">
+            <p><b>Ratings:</b> 4.5/5</p>
+            <h3 class="price">Price:26,000</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
