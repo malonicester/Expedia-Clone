@@ -7,7 +7,6 @@
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 50%;
   margin: 50px auto;
 }
 .container > div {
@@ -55,29 +54,64 @@
   gap: 10px;
   grid-template-areas: "one one one  two three four five";
 }
-#input_group>input{
+#input_group > input {
   border: 1px solid black;
   outline: 0;
   border-radius: 7px;
   padding: 10px;
 }
-#goingTO{
+#goingTO {
   grid-area: one;
 }
-#startDate{
+#startDate {
   grid-area: two;
 }
-#endDate{
+#endDate {
   grid-area: three;
 }
-#travelNo{
+#travelNo {
   grid-area: four;
 }
-#btn{
+#btn {
   grid-area: five;
   background-color: rgb(29, 89, 193);
   border: none;
   color: white;
   border-radius: 10px;
   cursor: pointer;
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 2fr;
+}
+.search-box {
+  margin: 40px 0;
+}
+.search-box > * {
+  margin: 10px 0;
+}
+#eg {
+  border-radius: 7px;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  width: 90%;
+}
+.filter-elem {
+  margin: 10px 0;
+}
+.separation {
+  margin: 20px 0px;
+  display: inline-block;
+
+}
+.filter-elem > label{
+  opacity: 70%;
+  font-size: 14px;
+}
+.search-box>h2{
+  opacity: 60%;
 }
