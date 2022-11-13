@@ -233,17 +233,17 @@ function createElement(element, text) {
 
 let price = document.querySelector('#price');
 price.addEventListener('change', (e) => {
-    if (price.value == ""){
+    if (price.value == "") {
         display(products);
     }
-    else if(price.value=="LTH"){
-        let filtered = products.sort((a,b)=>{
+    else if (price.value == "LTH") {
+        let filtered = products.sort((a, b) => {
             return a.price - b.price;
         })
         display(filtered)
     }
-    else if(price.value=="HTL"){
-        let filtered = products.sort((a,b)=>{
+    else if (price.value == "HTL") {
+        let filtered = products.sort((a, b) => {
             return b.price - a.price;
         })
         display(filtered)
@@ -251,20 +251,28 @@ price.addEventListener('change', (e) => {
 });
 
 let ratings = document.querySelector('#ratings');
-ratings.addEventListener('change',()=>{
-    if (ratings.value == ""){
+ratings.addEventListener('change', () => {
+    if (ratings.value == "") {
         display(products);
     }
-    else if(ratings.value=="LTH"){
-        let filtered = products.sort((a,b)=>{
+    else if (ratings.value == "LTH") {
+        let filtered = products.sort((a, b) => {
             return a.rating - b.rating;
         })
         display(filtered)
     }
-    else if(ratings.value=="HTL"){
-        let filtered = products.sort((a,b)=>{
+    else if (ratings.value == "HTL") {
+        let filtered = products.sort((a, b) => {
             return b.rating - a.rating;
         })
         display(filtered)
     }
+})
+
+let input = document.querySelector('#eg');
+input.addEventListener('input', (e) => {
+    let filtered = products.filter((item) => {
+       return  item.name.toLowerCase().includes(e.target.value.toLowerCase());
+    })
+    display(filtered);
 })
