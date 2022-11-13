@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trips</title>
     <link rel="stylesheet" href="./homepage.css" />
+    <link rel="icon" type="image/x-icon" href="./143847_expedia_icon.png" />
     <link rel="stylesheet" href="./trips.css" />
     <script src="./hotel.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav>
@@ -54,11 +62,11 @@
       </ul>
     </nav>
     <div id="input_group">
-        <input placeholder="Going To" type="text" name="" id="goingTO">
-        <input  type="date" name="" id="startDate">
-        <input type="date" name="" id="endDate">
-        <input placeholder="Travellers" type="text" name="" id="travelNo">
-        <button id="btn">Search</button>
+      <input placeholder="Going To" type="text" name="" id="goingTO" />
+      <input type="date" name="" id="startDate" />
+      <input type="date" name="" id="endDate" />
+      <input placeholder="Travellers" type="text" name="" id="travelNo" />
+      <button id="btn">Search</button>
     </div>
     <h1 id="delhi">Hotels Near Delhi</h1>
     <div id="select">
@@ -73,20 +81,128 @@
         <option value="HTL">High To Low</option>
       </select>
     </div>
-    <div class="container">
-      <div>
-        <img
-          src="https://images.trvl-media.com/hotels/5000000/4660000/4651800/4651727/c9be0802.jpg?impolicy=resizecrop&rw=455&ra=fit"
-          alt=""
-        />
-        <div class="title">
-          <div>
-            <h2>The Leela Palace New Delhi</h2>
-            <p>Chanakyapuri</p>
+    <div class="wrapper">
+      <div class="search-box">
+        <h2>Search by property name</h2>
+        <input placeholder="e.g. Marriot" type="text" name="" id="eg" />
+        <hr />
+        <p>Filter by</p>
+        <label class="separation" for="">Popular filters</label>
+        <div class="checkbox">
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Hot tub</label>
           </div>
-          <div class="price-component">
-            <p><b>Ratings:</b> 4.5/5</p>
-            <h3 class="price">Price:26,000</h3>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Free airport shuttle</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Breakfast included</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Free cancellation</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Delhi (DEL-Indira Gandhi Intl.)</label>
+          </div>
+
+          <label class="separation" for="">Price per night</label>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Less than ₹2,000</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">₹2,000 to ₹4,000</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">₹4,000 to ₹8,000</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">₹8,000 to ₹11,000 </label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Greater than ₹11,000 </label>
+          </div>
+          <label class="separation" for="">Guest Rating</label>
+          <div class="filter-elem">
+            <input type="radio" name="" id="" />
+            <label for="">Greater than ₹11,000 </label>
+          </div>
+          <div class="filter-elem">
+            <input type="radio" name="" id="" />
+            <label for="">Wonderful 4.5+ </label>
+          </div>
+          <div class="filter-elem">
+            <input type="radio" name="" id="" />
+            <label for="">Very good 4+ </label>
+          </div>
+          <div class="filter-elem">
+            <input type="radio" name="" id="" />
+            <label for="">Good 3.5+</label>
+          </div>
+          <label class="separation" for="">Payment type</label>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Fully refundable</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Reserve now, pay later</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+          </div>
+          <label class="separation" for="">Property type</label>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Bed & breakfast</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Condo</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Hotel</label>
+          </div>
+          <label class="separation" for="">Area</label>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Delhi (and vicinity)</label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Delhi (DEL-Indira Gandhi Intl.) </label>
+          </div>
+          <div class="filter-elem">
+            <input type="checkbox" name="" id="" />
+            <label for="">Connaught Place </label>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <img
+            src="https://images.trvl-media.com/hotels/5000000/4660000/4651800/4651727/c9be0802.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            alt=""
+          />
+          <div class="title">
+            <div>
+              <h2>The Leela Palace New Delhi</h2>
+              <p>Chanakyapuri</p>
+            </div>
+            <div class="price-component">
+              <p><b>Ratings:</b> 4.5/5</p>
+              <h3 class="price">Price:26,000</h3>
+            </div>
           </div>
         </div>
       </div>
