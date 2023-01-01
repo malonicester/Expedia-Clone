@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
         if (item.email == email && item.password == password) {
             found = true;
             alert('Sign in successfully')
+            window.location.href = './hotels.html'
         } 
     });
     if(!found){

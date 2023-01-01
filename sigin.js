@@ -14,12 +14,14 @@ form.addEventListener('submit', (e) => {
         if(item.email == obj.email){
             found = true;
             alert("You are already registered");
+            window.location.href = './login.html'
         }
     });
     if(!found){
        siginData.push(obj);
        localStorage.setItem('signin',JSON.stringify(siginData));
        alert('Registration Successful');
+       window.location.href = './login.html'
     }
 })
 console.log(document.querySelector('#log_in'))
