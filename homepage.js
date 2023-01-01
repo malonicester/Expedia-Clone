@@ -11,3 +11,7 @@ document.addEventListener('click', (e) => {
         dropdown.classList.remove('active')
     })
 })
+
+document.getElementById("search").addEventListener("click",(e)=>{
+   window.location.href = "siginin.html";
+})
