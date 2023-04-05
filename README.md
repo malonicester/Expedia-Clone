@@ -1,5 +1,5 @@
 # Travel Smart - Expedia.com Clone 
-<img width="20%"  src = "https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"/>
+<img width="20%"  src = "https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/Expedia-1-900x0.jpg"/>
 
 
 Expedia Group, Inc., headquartered in Seattle, owns and operates travel fare aggregators and travel metasearch engines, including Expedia.com, Hotels.com, Vrbo, Travelocity, Hotwire.com, Orbitz, Ebookers, CheapTickets, CarRentals.com, Expedia Cruises, Wotif, and Trivago. Over 3 million lodging facilities and flights on over 500 airlines are bookable on the company's websites.
